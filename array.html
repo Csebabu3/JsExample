@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let mobiles=["vivo","samsongs","redmi","realme","oppo",];
+        document.getElementById("demo").innerHTML=mobiles.toString();
+    </script>
+    <p id="demo1"></p>
+    <script>
+       let mobile=["vivo","samsongs","redmi","realme","oppo",];
+        document.getElementById("demo1").innerHTML=mobiles.join("*");
+    </script>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let laptops=["hassee","lenovo","doshibha","aser","dell"];
+        document.getElementById("demo2").innerHTML=laptops;
+        laptops.pop();
+        document.getElementById("demo3").innerHTML=laptops;
+    </script>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        let laptop=["hassee","lenovo","doshibha","aser","dell"];
+        document.getElementById("demo4").innerHTML=laptop.pop();
+        document.getElementById("demo5").innerHTML=laptop;
+    </script>
+     <p id="demo6"></p>
+     <p id="demo7"></p>
+     <script>
+         let fruits=["banana","apple","orange","graps","mango"];
+         document.getElementById("demo6").innerHTML=fruits;
+         fruits.push("whatermillan");
+         document.getElementById("demo7").innerHTML=fruits;
+    </script>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+       let fruit=["banana","apple","orange","graps","mango"];
+       document.getElementById("demo8").innerHTML= fruit.push("whatermillan");
+       document.getElementById("demo9").innerHTML=friut;
+    </script>
+    <p id="arg"></p>
+    <p id="arg1"></p>
+    <script>
+        let number=["1","2","3","4","5","6"];
+        document.getElementById("arg").innerHTML=number;
+        number.shift();
+        document.getElementById("arg").innerHTML=number;
+    </script>
+     <p id="arg2"></p>
+     <p id="arg3"></p>
+     <script>
+         let numbers=["1","2","3","4","5","6"];
+         document.getElementById("arg2").innerHTML=numbers.shift();
+        document.getElementById("arg3").innerHTML=numbers;
+     </script>
+     <p id="arg4"></p>
+     <p id="arg5"></p>
+     <script>
+         let numbers1=["1","2","3","4","5","6"];
+         document.getElementById("arg4").innerHTML= numbers1.unshift("0");
+
+         document.getElementById("arg5").innerHTML=numbers1;
+
+      
+     </script>
+     <p id="para"></p>
+     <p id="para1"></p>
+     <script>
+        let color=["red","blue","green","black","white"];
+        document.getElementById("para").innerHTML=color;
+        color[0]="pink";
+        document.getElementById("para1").innerHTML=color;
+     </script>
+     <p id="para2"></p>
+     <p id="para3"></p>
+     <script>
+        let colors=["red","blue","green","black","white"];
+        document.getElementById("para2").innerHTML=colors;
+        colors[colors.length]="yellow";
+        document.getElementById("para3").innerHTML=colors;
+     </script>
+
+<p id="para4"></p>
+<p id="para5"></p>
+<script>
+   let colors1=["red","blue","green","black","white"];
+   document.getElementById("para4").innerHTML="the first collor is:"+colors1[0];
+   delete colors1[0];
+   document.getElementById("para5").innerHTML="the first color is:"+colors1[0];
+</script>
+
+<p id="para6"></p>
+
+<script>
+   let name=["arun","kumar","vimal"];
+   let name1=["sathih","kavi","arasan"];
+   let name2=["rahul","vicky"];
+   let totalname=name.concat(name1,name2);
+   document.getElementById("para6").innerHTML=totalname;
+</script>
+<p id="para7"></p>
+<script>
+    let number2=[[1,2],[3,4],[5,6],[7,8]];
+    let newnum=number2.flat();
+    document.getElementById("para7").innerHTML=newnum;
+</script>
+<p id="para8"></p>
+<p id="para9"></p>
+<script>
+    let subject=["tamil","english","maths","science","social"];
+    document.getElementById("para8").innerHTML=subject;
+    subject.splice(2,0, "physics","chemistry");
+    document.getElementById("para9").innerHTML=subject;
+</script>
+
+<p id="sub"></p>
+
+<script>
+    let demt=["cse","ece","mech","civil"];
+    let demt1=demt.slice(1);
+    document.getElementById("sub").innerHTML=demt1;
+   
+    
+</script>
+<p id="len"></p>
+<p id="len1"></p>
+<script>
+    let Languages=["c#","c++","c","python"]
+    document.getElementById("len").innerHTML=Languages.length;
+    for(i=0;i<Languages.length;i++){
+        document.getElementById("len1").innerHTML=Languages.length;
+    }
+</script>
+<p id="col"></p>
+<script>
+    let link=["gf","vc","vfds","fdcd","gbfdx"];
+    let like=link.length;
+    document.getElementById("col").innerHTML=like;
+</script>
+<p id="myfun"></p>
+<p id="myfun1"></p>
+<script>
+    let some=["vc","jhg","jhg","jhgf","bvds","gfd"];
+    let leak=[some].reverse();
+    document.getElementById("myfun").innerHTML="reverse value:"+leak;
+    document.getElementById("myfun1").innerHTML="original value:"+some;
+</script>
+<p id="sort"></p>
+<script>
+    let charset=["vc","ggf","bfse","nbgdf","qgerd","tegrad"];
+    let newone=charset.sort();
+    document.getElementById("sort").innerHTML=newone;
+</script>
+<p id="fill"></p>
+<script>
+    let full=["apple","orange","mango","graps"];
+    document.getElementById("fill").innerHTML=full.fill("banana",1,3);
+</script>
+<p id="join"></p>
+<script>
+    let compare=["hi","this is babu","from ebrain"];
+    document.getElementById("join").innerHTML=compare.join("|");
+</script>
+<p id="splice"></p>
+<p id="splice1"></p>
+<script>
+    let Languages1=["python","c","c++","c#","rupy","java"];
+    let removed=Languages1.splice(2,1,"javascript");
+    document.getElementById("splice").innerHTML=Languages1;
+    document.getElementById("splice1").innerHTML=removed;
+
+</script>
+<p id="num"></p>
+<script>
+    let num=[1,2,3,4,5,6,7,8,7];
+    let lastIndex=num.lastIndexOf(9);
+    document.getElementById("num").innerHTML=lastIndex;
+</script>
+<p id="alp"></p>
+<script>
+    let alpha=["a","b","c","d","e","f","g","h"];
+    let lastIndex1=alpha.lastIndexOf("f",6);
+    document.getElementById("alp").innerHTML=lastIndex1;
+</script>
+<p id="index"></p>
+<script>
+    let row=["red","blue","green","pink","yellow","red"];
+    let index=row.indexOf("red",1);
+    document.getElementById("index").innerHTML=index;
+</script>
+<p id="Ar"></p>
+<script>
+    let arr=Array.of("a","b","c","d");
+   console.log(arr.length);
+</script>
+<p id="name"></p>
+<script>
+    let value=Array.of(3);
+   console.log(value);
+</script>
+<p id="point"></p>
+<script>
+    let slice=["1","2","3","4","5","6","7","8"];
+    let newslice=slice.slice(4,-2);
+    document.getElementById("point").innerHTML=newslice;
+</script>
+<p id="day"></p>
+<script>
+    let day=["monday","tuesday","wednesday","friday"];
+    let newday=day.findIndex((day) => day==="friday");
+    document.getElementById("day").innerHTML=newday;
+</script>
+<p id="even"></p>
+<script>
+    let numbers2=[1,4,3,4,5,6,7,8,9];
+    function isOdd(element){
+        return element%2==0;
+    }
+    let evennum=numbers2.find(isOdd);
+    document.getElementById("even").innerHTML=evennum;
+</script>
+<p id="reduce"></p>
+<script>
+    let numbers3=[1,2,3,4,5,6,7,8,9];
+    function sum_reducer(accumulator,currentvalue){
+        return accumulator+currentvalue;
+    }
+    let sum=numbers3.reduceRight(sum_reducer);
+    document.getElementById("reduce").innerHTML=sum;
+</script>
+<p id="call"></p>
+<script>
+    let expense=[21,8,76,32,12];
+    function myfunction(accumulator,currentvalue){
+        return accumulator+currentvalue;
+    }
+    let result=expense.reduceRight(myfunction);
+    document.getElementById("call").innerHTML=result;
+</script>
+<p id="pass"></p>
+<script>
+    let char=["Hi i'm babu","from orathanadu"];
+    function myfun(accumulator,currentvalue){
+        return accumulator+currentvalue;
+    }
+    let result1=char.reduce(myfun);
+    document.getElementById("pass").innerHTML=result1;
+</script>
+<p id="bool"></p>
+<script>
+    let boolean=[1,2,3,4,5,6,7,8,9];
+    document.getElementById("bool").innerHTML=Array.isArray(Text);
+</script>
+</body>
+</html>

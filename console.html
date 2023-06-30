@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Gender :</label><br><br>
+    <input type="radio" value="male" id="rdbMale" name="rdbstudentgender">
+    <label>male</label>
+    <input type="radio" value="female" id="rdbFemale" name="rdbstudentgender">
+    <label>female</label>
+    <span id="spnIsStudentGenderValid"></span><br><br>
+    <script>
+        if(document.getElementById("rdbMale").checked!=true && document.getElementById("rdbFemale").checked!=true)
+{
+    IsStudentGenderValid=false;
+    console.log("Please select your gender");
+    document.getElementById("spnIsStudentGenderValid").innerHTML="please select your gender";
+    document.getElementById("spnIsStudentGenderValid").style.color="red";
+}
+else{
+    IsStudentGenderValid=true;
+    console.log("Valid");
+    document.getElementById("spnIsStudentGenderValid").innerHTML="valid";
+    document.getElementById("spnIsStudentGenderValid").style.color="green";
+}
+
+    </script>
+</body>
+</html>

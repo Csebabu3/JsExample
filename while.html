@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="index"></p>
+    <script>
+        
+        let eval="";
+        let j=0;
+        while(j<10){
+            eval+="this number is" + j + "<br>";
+            j++;
+        }
+        document.getElementById("index").innerHTML=eval;
+    </script>
+    <p id="demo"></p>
+
+    <script>
+    let text = "";
+    let i = 0;
+    while (i < 10) {
+      text += "The number is " + i+"<br>";
+      i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+    </script>
+    <p id="text1"></p>
+    <script>
+        var texte=""
+        var k=0;
+        do{
+            texte+="this number is"+k+"<br>";
+            k++;
+        }
+        while(k<10);
+        document.getElementById("text1").innerHTML=texte;
+    </script>
+    <p id="demo2"></p>
+    <script>
+       
+        let load="";
+        for(i=0;i<10;i++){
+            if(i==3){continue;}
+            load+="this is a color"+i+"<br>";
+        }
+        document.getElementById("demo2").innerHTML=load;
+    </script>
+    
+</body>
+</html>

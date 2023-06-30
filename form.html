@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <div class="container">
+    <form action="" id="form">
+        <h1>Register</h1>
+        <div class="input-group">
+            <label>User name</label>
+            <input type="text" id="username">
+            <div class="error">required</div>
+        </div>
+        <div class="input-group">
+            <label>E-Mail</label>
+            <input type="text" id="email">
+            <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="text" id="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label>Confirmpassword</label>
+            <input type="text" id="cpassword">
+            <div class="error"></div>
+        </div>
+       <button type="button">Submit</button>
+    </form>
+   </div>
+</body>
+<script src="form.js"></script>
+</html>

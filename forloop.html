@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let num=["1","2","3","4","5","6","7","8","9","10"];
+        let text="";
+        for(i=0;i<10;i++){
+            text+=num[i]+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <p id="demo1"></p>
+    <script>
+        const name=["arun","john","jamsin","jessi","varun","kavi"];
+        let print="";
+        for(i=0;i<name.length;i++){
+            print+=name[i]+"<br>";
+        }
+        document.getElementById("demo1").innerHTML=print;
+    </script>
+    <p id="demo2"></p>
+    <script>
+        let table="";
+        let num1=9;
+        for(i=0;i<num1;i++){
+            table+="this number is" + i + "<br>";
+        }
+        document.getElementById("demo2").innerHTML=table;
+    </script>
+    <p id="hello"></p>
+    <script>
+        const laptop=["hassee","lenovo","dell","hp","aser","doshibha"];
+        let call="";
+        let i=2;
+        let lap=laptop.length;
+        for(i=2;i<lap;i++){
+            call+="what is the length of laptop"+i+"<br>";
+        }
+        document.getElementById("hello").innerHTML=call;
+    </script>
+    <p id="test"></p>
+    <script>
+        const make={fname:"arun",lname:"kumar",rollno:21};
+        let value="";
+        for(let key in make){
+            value+=make[key]+"<br>";
+        }
+        document.getElementById("test").innerHTML=value;
+    </script>
+    <p id="test2"></p>
+    <script>
+        const colors=["red","blue","green","white","black"];
+        let values='';
+        for(let color of colors){
+            values+="color" +   color
+            console.log(values)
+        }
+         document.getElementById("test2").innerHTML+="color" +   color;
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="processor.html" method="get" id="frmstudentRegistration" name="frmStudentRegistration" onsubmit="return validate()" onreset="resetform()">
+    <label for="txtStudentName">student name:</label><br>
+    <input type="text" value="" placeholder="enter your name"  id="txtStudentName">
+    <span id="spnIsStudentNameValid"></span><br>
+
+    <label>password</label><br>
+    <input type="password" value="" placeholder="Enter your password" id="pwdStudent" name="pwdStudent">
+    <span id="spnIsStudentPasswordValid"></span><br>
+
+    <label>confirm password</label><br>
+    <input type="confirmpassword" value="" placeholder="Enter your confirm password" id="CpwdStudent" name="cpwdstudent">
+    <span id="spnIsStudentCPasswordValid"></span><br>
+
+    <label>Gender</label><br><br>
+    <input type="radio" value="male" id="rdbMale" name="rdbstudentgender">
+    <label>male</label>
+    <input type="radio" value="female" id="rdbFemale" name="rdbstudentgender">
+    <label>female</label>
+    <span id="spnIsStudentGenderValid"></span><br><br>
+
+    <label>Qualification</label><br>
+    <select id="slctStudentQualification" name="slctStudentQualification">
+        <option value="-1">-- select --</option>
+        <option value="cse">-- cse --</option>
+        <option value="ece">-- ece --</option>
+        <option value="civil">-- civil --</option>
+        <option value="mech">-- mech --</option>
+        <option value="eee">-- eee --</option>
+    </select><br>
+    <span id="spnIsStudentQualificationValid"></span>
+
+    <label>Languages :</label><br><br>
+    <input type="radio" value="Tamil" id="Tamil" name="Languages">
+    <label>Tamil</label>
+    <input type="radio" value="English" id="English" name="Languages">
+    <label>English</label>
+    <span id="spnIsStudentLanguagesValid"></span><br><br>
+
+
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+
+    
+
+   </form>
+</body>
+<script src="radio.js"></script>
+</html>
